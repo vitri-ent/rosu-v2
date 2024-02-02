@@ -61,6 +61,7 @@ pub struct Score {
     pub mapset: Option<BeatmapsetCompact>,
     #[serde(alias = "ruleset_id")]
     pub mode: GameMode,
+    pub id: u64,
     pub mods: GameMods,
     #[serde(alias = "legacy_perfect")]
     pub perfect: bool,
