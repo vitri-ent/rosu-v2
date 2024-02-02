@@ -373,6 +373,7 @@ impl FromStr for GameMods {
                 "7K" | "K7" => GameMods::Key7,
                 "8K" | "K8" => GameMods::Key8,
                 "9K" | "K9" => GameMods::Key9,
+                "CL" => GameMods::NoMod,
                 _ if upper == "NOMOD" => GameMods::NoMod,
                 _ if upper == "RELAX" => GameMods::Relax,
                 _ => return Err(ParsingError::ModsStr(s.to_owned()).into()),
